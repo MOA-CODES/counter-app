@@ -15,6 +15,7 @@ class Counter extends Component {
         );//this is a jsx component (must have one parent)
         // 'this' references the object we are currenty working with
     }
+//jsx expression's get compiled to react elements
 
     formatCount(){
         const {count} = this.state;
