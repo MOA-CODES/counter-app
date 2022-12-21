@@ -28,9 +28,9 @@ class Counter extends Component {
 
                 </React.Fragment>
         );
-        //this is a jsx component (must have one parent)
+        /*this is a jsx component (must have one parent)
         // 'this' references the object we are currenty working with
-        //jsx expression's get compiled to react elements
+        //jsx expression's get compiled to react elements*/
     }
 
     handleIncrement = () =>{ 
