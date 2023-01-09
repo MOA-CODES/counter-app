@@ -54,7 +54,7 @@ handleDelete = (counterId)=>{
 render(){
   return (
     <React.Fragment>
-   <NavBar/>
+   <NavBar totalcounters={this.state.counters.filter(c=>c.value>0).length}/>
    <main className="container">
     <Counters onReset={this.handleReset} onDelete={this.handleDelete} onDecrement={this.handleDecrement}
      onIncrement={this.handleIncrement} counters={this.state.counters}/>
