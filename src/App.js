@@ -16,6 +16,17 @@ state = {
   ],
 } ;
 
+constructor(){
+  super();
+  console.log('App - constructor');
+}
+
+componentDidMount(){
+  console.log('App - mounted');
+  //Ajax call
+  //then set state with the requested data
+}
+
 handleIncrement = (counter) =>{
   //too make counters and counter object in this state remain the same
   //changing a state directly is wrong in react
@@ -52,6 +63,9 @@ handleDelete = (counterId)=>{
 ///
 
 render(){
+  console.log('App - Rendered');
+
+
   return (
     <React.Fragment>
    <NavBar totalcounters={this.state.counters.filter(c=>c.value>0).length}/>
